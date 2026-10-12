@@ -375,7 +375,7 @@ h2{font-size:clamp(2.4rem,5vw,4.25rem);letter-spacing:-.035em}
 .form-status{margin-top:14px;min-height:1.5em;font-weight:500;color:var(--violet-700)}
 
 .map{margin-top:clamp(56px,7vw,96px);overflow:hidden;aspect-ratio:21/9;min-height:260px;border-radius:6px 6px 6px 140px;background:var(--violet-700);color:var(--paper);display:grid;place-items:center;text-align:center;padding:24px}
-.map iframe{width:100%;height:100%;border:0;display:block}
+.map iframe{width:100%;height:100%;border:0;display:block;border-radius:inherit;}
 .map p{color:rgba(245,239,239,.8);max-width:36ch}
 @media (max-width:900px){
   .map{aspect-ratio:4/3;border-radius:6px 6px 6px 90px}
@@ -532,10 +532,9 @@ h2{font-size:clamp(2.4rem,5vw,4.25rem);letter-spacing:-.035em}
         <!-- ✏️ EDIT: replace each bracketed placeholder with real details.
              Displaying the council registration number is usually required for medical advertising. -->
         <dl class="facts doc-facts">
-          <div><dt>Qualifications</dt><dd>[Add degrees, university and year]</dd></div>
-          <div><dt>Registration</dt><dd>[Add registration number and council]</dd></div>
-          <div><dt>Experience</dt><dd>[Add years in practice]</dd></div>
-          <div><dt>Memberships</dt><dd>[Add professional bodies, if any]</dd></div>
+          <div><dt>Qualifications</dt><dd>BDS(PGIMS),MSFO(NFSU)</dd></div>
+          <div><dt>Experience</dt><dd>8+ years</dd></div>
+          <div><dt>Memberships</dt><dd>Member of International Research Gate</dd></div>
         </dl>
       </article>
 
@@ -560,15 +559,15 @@ h2{font-size:clamp(2.4rem,5vw,4.25rem);letter-spacing:-.035em}
          • To add more photos, copy a <button class="tile"> and give it a new class (t10, t11...) or
            just let it flow; the viewer picks up every tile automatically. -->
     <div class="gal-grid" id="gallery-grid">
-      <button class="tile t1" type="button" aria-label="Open photo: Reception area"><img width="1200" height="1500" src="images/offic.jpg" data-ph="Gallery photo 1" data-size="1200x1500" alt="Reception area" loading="lazy" decoding="async"></button>
-      <button class="tile t2" type="button" aria-label="Open photo: Treatment room"><img width="1400" height="1000" src="images/battisi.jpg" data-ph="Gallery photo 2" data-size="1400x1000" alt="Treatment room" loading="lazy" decoding="async"></button>
-      <button class="tile t3" type="button" aria-label="Open photo: Waiting area"><img width="1000" height="1000" src="images/tools.jpg" data-ph="Gallery photo 3" data-size="1000x1000" alt="Waiting area" loading="lazy" decoding="async"></button>
-      <button class="tile t4" type="button" aria-label="Open photo: Dental chair"><img width="1000" height="1000" src="images/crown.jpg" data-ph="Gallery photo 4" data-size="1000x1000" alt="Dental chair" loading="lazy" decoding="async"></button>
-      <button class="tile t5" type="button" aria-label="Open photo: Consultation desk"><img width="1400" height="1000" src="images/gallery22.jpg" data-ph="Gallery photo 5" data-size="1400x1000" alt="Consultation desk" loading="lazy" decoding="async"></button>
-      <button class="tile t6" type="button" aria-label="Open photo: Instrument tray"><img width="1000" height="1400" src="images/opd 3.jpg" data-ph="Gallery photo 6" data-size="1000x1400" alt="Instrument tray" loading="lazy" decoding="async"></button>
-      <button class="tile t7" type="button" aria-label="Open photo: X-ray room"><img width="1400" height="1000" src="images/mod2.jpg" data-ph="Gallery photo 7" data-size="1400x1000" alt="X-ray room" loading="lazy" decoding="async"></button>
-      <button class="tile t8" type="button" aria-label="Open photo: Clinic entrance"><img width="1000" height="1400" src="images/denture.jpg" data-ph="Gallery photo 8" data-size="1000x1400" alt="Clinic entrance" loading="lazy" decoding="async"></button>
-      <button class="tile t9" type="button" aria-label="Open photo: Sterilisation area"><img width="1400" height="1000" src="images/brecels.jpg" data-ph="Gallery photo 9" data-size="1400x1000" alt="Sterilisation area" loading="lazy" decoding="async"></button>
+      <button class="tile t1" type="button" aria-label="Open photo: OPD room"><img width="1200" height="1500" src="images/offic.jpg" data-ph="Gallery photo 1" data-size="1200x1500" alt="Reception area" loading="lazy" decoding="async"></button>
+      <button class="tile t2" type="button" aria-label="Open photo: Model for Explain the problem"><img width="1400" height="1000" src="images/battisi.jpg" data-ph="Gallery photo 2" data-size="1400x1000" alt="Treatment room" loading="lazy" decoding="async"></button>
+      <button class="tile t3" type="button" aria-label="Open photo: Tools"><img width="1000" height="1000" src="images/tools.jpg" data-ph="Gallery photo 3" data-size="1000x1000" alt="Waiting area" loading="lazy" decoding="async"></button>
+      <button class="tile t4" type="button" aria-label="Open photo: Teeth Crowning"><img width="1000" height="1000" src="images/crown.jpg" data-ph="Gallery photo 4" data-size="1000x1000" alt="Dental chair" loading="lazy" decoding="async"></button>
+      <button class="tile t5" type="button" aria-label="Open photo: Dental Chair"><img width="1400" height="1000" src="images/gallery22.jpg" data-ph="Gallery photo 5" data-size="1400x1000" alt="Consultation desk" loading="lazy" decoding="async"></button>
+      <button class="tile t6" type="button" aria-label="Open photo: Painless treatement"><img width="1000" height="1400" src="images/opd 3.jpg" data-ph="Gallery photo 6" data-size="1000x1400" alt="Instrument tray" loading="lazy" decoding="async"></button>
+      <button class="tile t7" type="button" aria-label="Open photo: teeth models"><img width="1400" height="1000" src="images/mod2.jpg" data-ph="Gallery photo 7" data-size="1400x1000" alt="X-ray room" loading="lazy" decoding="async"></button>
+      <button class="tile t8" type="button" aria-label="Open photo: Denture"><img width="1000" height="1400" src="images/denture.jpg" data-ph="Gallery photo 8" data-size="1000x1400" alt="Clinic entrance" loading="lazy" decoding="async"></button>
+      <button class="tile t9" type="button" aria-label="Open photo: Braces for teeth"><img width="1400" height="1000" src="images/brecels.jpg" data-ph="Gallery photo 9" data-size="1400x1000" alt="Sterilisation area" loading="lazy" decoding="async"></button>
     </div>
   </div>
 </section>
